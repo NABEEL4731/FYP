@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1001314140688",
+    "firebase_url": "https://desi-cuisine-default-rtdb.firebaseio.com",
+    "project_id": "desi-cuisine",
+    "storage_bucket": "desi-cuisine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001314140688:android:fc6bc8ae7accad2d45c095",
+        "android_client_info": {
+          "package_name": "com.example.admindesicuisine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001314140688-qh8ijguk7vv0jk45d05nc242grp0k7ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgxJAuysN44Qpshc1JorEW-pjtBalibx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001314140688-qh8ijguk7vv0jk45d05nc242grp0k7ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001314140688:android:3b1b474e7e53f58745c095",
+        "android_client_info": {
+          "package_name": "com.example.desicuisine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001314140688-qh8ijguk7vv0jk45d05nc242grp0k7ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgxJAuysN44Qpshc1JorEW-pjtBalibx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001314140688-qh8ijguk7vv0jk45d05nc242grp0k7ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

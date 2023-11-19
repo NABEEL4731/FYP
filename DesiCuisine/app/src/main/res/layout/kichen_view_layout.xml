@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backColor"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/kitchenImageL1"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/loading_image" />
+
+            <RelativeLayout
+                android:id="@+id/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/kitchenImageL1">
+
+                <TextView
+                    android:id="@+id/cookNameL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cook Name Here"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/contentSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kitchenEmailL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cookNameL1"
+                    android:text="Email Here"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/newContentSize" />
+
+                <TextView
+                    android:id="@+id/kitchenPhoneL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kitchenEmailL1"
+                    android:text="phone Here"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/newContentSize" />
+                <!--
+                            <TextView
+                                android:id="@+id/expertPhoneL1"
+                                android:textSize="@dimen/newContentSize"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/expertEmailL1"
+                                android:layout_marginTop="5dp"
+                                android:text="Phone Here"
+                                android:textColor="@color/colorPrimary" />-->
+
+                <TextView
+                    android:id="@+id/ratingDomainL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kitchenPhoneL1"
+                    android:text="Rating Here"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/newContentSize" />
+
+                <TextView
+                    android:id="@+id/statusL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ratingDomainL1"
+                    android:text="Status Here"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/newContentSize"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aa"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/locationButtonViewKitchen"
+                style="@style/ButtonClick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Location" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

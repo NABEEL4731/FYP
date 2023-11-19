@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.desicuisine">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher1_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Notification.Receiving.MyFireBaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.Receiving.MyFireBaseMessaging"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Kitchen.Activities.ProfileActivity" />
+        <activity android:name=".User.Activities.ViewWeeklyOrderUserActivity" />
+        <activity android:name=".Kitchen.Activities.ViewUserActivity" />
+        <activity android:name=".Kitchen.Activities.WeeklySubscriptionKitchenActivity" />
+        <activity android:name=".User.Activities.ViewWeeklyOfferUserActivity" />
+        <activity android:name=".Kitchen.Activities.ViewWeeklyOfferKitchenActivity" />
+        <activity android:name=".User.Activities.ViewKitchenActivity" />
+        <activity android:name=".User.Activities.UserSpecialOrderActivity" />
+        <activity android:name=".Kitchen.Activities.ViewOrderKitchenActivity" />
+        <activity android:name=".Kitchen.Activities.ProductDetailsActivity" />
+        <activity android:name=".User.Activities.ViewOrderUserActivity" />
+        <activity
+            android:name=".User.Activities.ProductsUserActivity"
+            android:label="All Products" />
+        <activity
+            android:name=".Kitchen.Activities.ViewProductsKActivity"
+            android:label="All Products" />
+        <activity android:name=".User.SignUpActivity" />
+        <activity android:name=".User.LoginActivity" />
+        <activity
+            android:name=".Kitchen.Activities.KitchenDashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User.Activities.UserDashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

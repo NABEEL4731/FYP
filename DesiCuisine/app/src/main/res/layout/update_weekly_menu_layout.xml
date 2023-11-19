@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/editBtnW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/edit_white_image" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:layout_marginBottom="@dimen/bottomMargin"
+                android:orientation="vertical">
+
+
+                <EditText
+
+                    android:id="@+id/etOnameW"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/bottomMargin"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/order_image"
+                    android:focusable="false"
+                    android:hint="Menu Title"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName" />
+
+                <EditText
+
+                    android:id="@+id/etPriceW"
+                    style="@style/editTextStyle"
+                    android:layout_below="@id/etPNameADD"
+                    android:layout_marginBottom="@dimen/topMargin"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/currency_image"
+                    android:focusable="false"
+                    android:hint="Price in Rupees "
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+
+                <!--
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:text="Offer Details"
+                                    android:textColor="@color/textWhite"
+                                    android:textSize="@dimen/newContentSize" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 1"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+                        <EditText
+                            android:id="@+id/day1B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day1L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day1D"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 2"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+
+                        <EditText
+                            android:id="@+id/day2B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day2L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day2D"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:layout_marginBottom="@dimen/bottomMargin"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 3"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+                        <EditText
+                            android:id="@+id/day3B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day3L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day3D"
+                            style="@style/editTextStyle"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 4"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+                        <EditText
+                            android:id="@+id/day4B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:imeOptions="actionNext"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day4L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day4D"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 5"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+                        <EditText
+                            android:id="@+id/day5B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day5L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day5D"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 6"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+
+                        <EditText
+                            android:id="@+id/day6B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day6L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day6D"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:gravity="center"
+                            android:text="Day 7"
+                            android:textColor="@color/textWhite"
+                            android:textSize="@dimen/newContentSize" />
+
+                        <EditText
+                            android:id="@+id/day7B"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/break_fast_image"
+                            android:focusable="false"
+                            android:hint="Break Fast"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day7L"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/bottomMargin"
+                            android:clickable="false"
+                            android:imeOptions="actionNext"
+                            android:drawableLeft="@drawable/lunch_image"
+                            android:focusable="false"
+                            android:hint="Lunch"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/day7D"
+                            style="@style/editTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:drawableLeft="@drawable/dinner_image"
+                            android:focusable="false"
+                            android:hint="Dinner"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <Button
+                        android:id="@+id/cencleButtonW"
+                        style="@style/ButtonClick"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:text="Cencel" />
+
+                    <Button
+                        android:id="@+id/addButtonW"
+                        style="@style/ButtonClick"
+                        android:layout_width="0dp"
+                        android:focusable="false"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:text="Update" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

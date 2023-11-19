@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homeKit"
+            android:icon="@drawable/home_imag"
+            android:title="Home" />
+        <item
+            android:id="@+id/productKitNav"
+            android:icon="@drawable/order_image"
+            android:title="Products" />
+        <item
+            android:id="@+id/weeklyOfferKit"
+            android:icon="@drawable/week_imag"
+            android:title="Weekly Menu" />
+        <!--<item
+            android:id="@+id/specialOrder"
+            android:icon="@drawable/special_imag"
+            android:title="Special Order" />-->
+        <item
+            android:id="@+id/profileKit"
+            android:icon="@drawable/profile_imag"
+            android:title="Profile" />
+        <item
+            android:id="@+id/logoutKit"
+            android:icon="@drawable/logout_imag"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feedK"
+                android:icon="@drawable/feedback_image"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appPading">@dimen/_10sdp</dimen>
+    <dimen name="appMarginTop">@dimen/_20sdp</dimen>
+
+    <dimen name="headingTextSize">@dimen/_20ssp</dimen>
+
+    <dimen name="contentSize">@dimen/_16ssp</dimen>
+    <dimen name="newContentSize">@dimen/_13ssp</dimen>
+
+    <dimen name="cardSize">@dimen/_185sdp</dimen>
+    <dimen name="alert_logo_size">@dimen/_60sdp</dimen>
+
+
+    <dimen name="cardHeightSize">@dimen/_150sdp</dimen>
+
+    <dimen name="cardWidthSize">@dimen/_150sdp</dimen>
+
+
+    <dimen name="button_width">@dimen/_105sdp</dimen>
+    <dimen name="button_widthLarge">@dimen/_170sdp</dimen>
+    <dimen name="button_widthNormal">@dimen/_110sdp</dimen>
+
+    <dimen name="topMargin">@dimen/_18sdp</dimen>
+    <dimen name="bottomMargin">@dimen/_18sdp</dimen>
+    <dimen name="leftMargin">@dimen/_18sdp</dimen>
+    <dimen name="rightMargin">@dimen/_18sdp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+
+</resources>

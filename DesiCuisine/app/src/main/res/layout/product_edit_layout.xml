@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/appPading">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:text="Update Product"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/contentSize" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/photoHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/photoTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="Product Image"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/photoHeader"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/productPhotoEditAlertIv"
+                            android:layout_width="@dimen/_110sdp"
+
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circle_background"
+                            android:padding="3dp"
+                            android:src="@drawable/capture" />
+
+                        <ImageView
+                            android:id="@+id/pickProductPhotoEditAlertBtnIv"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_alignRight="@id/productPhotoEditAlertIv"
+                            android:layout_alignBottom="@id/productPhotoEditAlertIv"
+                            android:src="@drawable/camera_image_white" />
+
+                        <TextView
+                            android:id="@+id/categoryEditProductAlertTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/productPhotoEditAlertIv"
+                            android:layout_centerHorizontal="true"
+                            android:paddingTop="@dimen/appPading"
+                            android:paddingBottom="@dimen/appPading"
+
+                            android:text="Category"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/newContentSize" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+
+                        android:id="@+id/etPNameEdit"
+                        style="@style/editTextStyle1"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:hint="Product Name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+
+                        android:id="@+id/etPriceEdit"
+                        style="@style/editTextStyle1"
+                        android:layout_below="@id/etPNameADD"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:hint="Price in Rupees "
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal" />
+
+
+                    <EditText
+
+                        android:id="@+id/etQuantityEdit"
+                        style="@style/editTextStyle1"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:hint="Quantiy"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cencelAlertBtnEdit"
+                            style="@style/ButtonClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Cencel" />
+
+                        <Button
+                            android:id="@+id/updateAlertBtnEdit"
+                            style="@style/ButtonClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:text="Update" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backColor"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product Name"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/contentSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/proNameOrderViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Price"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/contentSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/proPriceOrderViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1 "
+                android:text="Price"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order Status"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/contentSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderStatusViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="status"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product Type"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/contentSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderCategoryViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product Type"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/contentSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderDescriptionViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/emalViewHolderTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kitchen Email"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/contentSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kitchenEmailViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kitchen mail"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+
+        </LinearLayout>
+        <!--
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cook Name"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/newContentSize" />
+
+                        <TextView
+                            android:id="@+id/cookNameOrderViewHolder"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cook Name"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/newContentSize" />
+
+                    </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/dateOrderViewHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="date"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/newContentSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:id="@+id/layoutLL"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/locationOrderViewHolder"
+                style="@style/ButtonClick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="location" />
+
+            <Button
+                android:id="@+id/viewMenuViewHolder"
+                style="@style/ButtonClick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Menu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/orderKitLayoutViewHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/rejectOrderViewHolder"
+                style="@style/ButtonClick"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject" />
+
+            <Button
+                android:id="@+id/acceptOrderViewHolder"
+                style="@style/ButtonClick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_back"
+    tools:context=".User.SignUpActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/app_back_top_corner"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/splash_img" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:text="Create Account"
+                    android:textAlignment="center"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/_20sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+
+                            android:id="@+id/etFNameSu"
+                            style="@style/editTextStyle"
+                            android:layout_marginTop="@dimen/topMargin"
+                            android:drawableLeft="@drawable/person_image"
+                            android:hint="First Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+
+                            android:id="@+id/etlNameLA"
+                            style="@style/editTextStyle"
+                            android:layout_below="@id/etFNameSu"
+                            android:layout_marginTop="@dimen/topMargin"
+                            android:drawableLeft="@drawable/person_image"
+                            android:hint="Last Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/topMargin"
+                        android:layout_weight="1">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/suProfileImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_84sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/choose_profile_pic_person" />
+
+                        <ImageView
+                            android:id="@+id/pickProfilePhotoIv"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_alignRight="@id/suProfileImg"
+                            android:layout_alignBottom="@id/suProfileImg"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:src="@drawable/camera_image_white" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <EditText
+
+                    android:id="@+id/etEmailSu"
+                    style="@style/editTextStyle"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:drawableLeft="@drawable/mail_image"
+                    android:hint="User Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin">
+
+                    <EditText
+
+                        android:id="@+id/etPassSu"
+                        style="@style/editTextStyle"
+                        android:drawableLeft="@drawable/lock_image"
+                        android:hint="Password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword" />
+
+                    <ToggleButton
+                        android:id="@+id/tbPassSu"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="13dp"
+                        android:background="@drawable/invisible_pass"
+                        android:checked="false"
+                        android:focusable="true"
+                        android:padding="@dimen/_10sdp"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin">
+
+                    <EditText
+
+
+                        android:id="@+id/etConPassSu"
+                        style="@style/editTextStyle"
+                        android:drawableLeft="@drawable/lock_image"
+                        android:hint="Confirm Password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword" />
+
+                    <ToggleButton
+                        android:id="@+id/tbConPassSu"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="13dp"
+                        android:background="@drawable/invisible_pass"
+                        android:checked="false"
+                        android:focusable="true"
+                        android:padding="@dimen/_10sdp"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+
+                <com.santalu.maskedittext.MaskEditText
+
+                    android:id="@+id/etPhoneSu"
+                    style="@style/editTextStyle"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:drawableLeft="@drawable/phone_image"
+                    android:hint="Phone"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    app:met_mask="+92##########" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <CheckBox
+                        android:id="@+id/cbIsKitchenSu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/textWhite"
+                        android:checked="false"
+                        android:text="Kitchen"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/newContentSize" />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/signUpButtonSu"
+                    style="@style/ButtonClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Sign Up" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an Account? "
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/newContentSize" />
+
+                    <TextView
+                        android:id="@+id/alreadyTvSu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login here"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/contentSize"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

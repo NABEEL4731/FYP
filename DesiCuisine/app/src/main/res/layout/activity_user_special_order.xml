@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    tools:context=".User.Activities.UserSpecialOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photoHeader"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+
+                    <ImageView
+                        android:id="@+id/showProdImgADDIV"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="2dp"
+                        android:src="@drawable/logo_app" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+
+                    android:id="@+id/etOrderNameSp"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/bottomMargin"
+                    android:drawableLeft="@drawable/order_image"
+                    android:hint="Order Title"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName" />
+
+                <EditText
+
+                    android:id="@+id/etOrderPriceSp"
+                    style="@style/editTextStyle"
+                    android:layout_marginBottom="@dimen/topMargin"
+                    android:drawableLeft="@drawable/currency_image"
+                    android:hint="Maximum Price in Rupees"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+
+
+                <EditText
+                    android:id="@+id/etOrderDescrPtioneSp"
+                    style="@style/editTextStyle"
+                    android:hint="Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/description_image"
+                    android:gravity="top|left"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textMultiLine"
+                    android:minLines="3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <Button
+                        android:id="@+id/pickButtonSp"
+                        style="@style/ButtonClick"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:text="Pick Kitchen" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:text="Add Product"
+                    android:textAlignment="center"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/_20sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+
+                            android:id="@+id/etPNameADD"
+                            style="@style/editTextStyle"
+                            android:layout_marginTop="@dimen/topMargin"
+                            android:drawableLeft="@drawable/order_image"
+                            android:hint="Product Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+
+                            android:id="@+id/etPriceADD"
+                            style="@style/editTextStyle1"
+                            android:layout_below="@id/etPNameADD"
+                            android:layout_marginTop="@dimen/topMargin"
+                            android:drawableLeft="@drawable/currency_image"
+                            android:hint="Price in Rupees"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/topMargin"
+                        android:layout_weight="1">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/showProdImgADDIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_84sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="3dp"
+                            android:src="@drawable/capture" />
+
+                        <ImageView
+                            android:id="@+id/pickProductPhotoADDIv"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_alignRight="@id/showProdImgADDIV"
+                            android:layout_alignBottom="@id/showProdImgADDIV"
+                            android:layout_marginRight="@dimen/_24sdp"
+                            android:src="@drawable/camera_image" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <EditText
+
+                    android:id="@+id/etQuantityADD"
+                    style="@style/editTextStyle"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:drawableLeft="@drawable/quantity_image"
+                    android:hint="Quantiy"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="Category"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/newContentSize" />
+
+
+                <Spinner
+                    android:id="@+id/categorySpinnerADD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"></Spinner>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/topMargin"
+                    android:layout_marginBottom="@dimen/topMargin"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/cencleButtonADD"
+                        style="@style/ButtonClick"
+                        android:layout_width="@dimen/button_widthNormal"
+                        android:layout_height="wrap_content"
+                        android:text="Cencel" />
+
+                    <Button
+                        android:id="@+id/addButtonADD"
+                        style="@style/ButtonClick"
+                        android:layout_width="@dimen/button_widthNormal"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="Add" />
+
+                </LinearLayout>
+        -->
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

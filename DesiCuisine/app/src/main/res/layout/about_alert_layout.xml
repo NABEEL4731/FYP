@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/app_backsmall"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/alert_logo_size"
+            android:layout_height="@dimen/alert_logo_size"
+            android:layout_margin="@dimen/topMargin"
+            android:src="@drawable/logo_app" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/contentSize" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textAlignment="center"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/contentSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="@dimen/topMargin"
+            android:background="@color/colorPrimary">
+
+        </View>
+
+        <TextView
+            android:id="@+id/alertTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Developed By"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/contentSize"
+            android:textStyle="italic" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/team_Name"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/newContentSize" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/developer_email"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/newContentSize" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/topMargin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/closeAboutAlertBtn"
+                style="@style/ButtonClick"
+                android:layout_width="@dimen/button_width"
+                android:gravity="center"
+                android:text="close" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

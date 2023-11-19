@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/app_backsmall"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/alert_logo_size"
+            android:layout_height="@dimen/alert_logo_size"
+            android:layout_margin="@dimen/bottomMargin"
+            android:src="@drawable/logo_app" />
+
+
+        <EditText
+            android:id="@+id/feedbackEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/appPading"
+            android:layout_marginRight="@dimen/appPading"
+            android:drawableLeft="@drawable/mail_image"
+            android:gravity="top|left"
+            android:hint="Enter Your Feedback"
+            android:inputType="text|textMultiLine"
+            android:minLines="5" />
+
+
+        <Button
+            android:id="@+id/sendFeedbackBtn"
+            style="@style/ButtonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/topMargin"
+            android:text="Send" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    tools:context=".Kitchen.Activities.ProductDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/photoHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/photoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:text="Product Image"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+
+                <ImageView
+                    android:id="@+id/editBtnP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/edit_white_image" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photoHeader"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/productPhotoEditAlertIv"
+                    android:layout_width="@dimen/_110sdp"
+
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_background"
+                    android:padding="3dp"
+                    android:src="@drawable/capture" />
+
+                <ImageView
+                    android:id="@+id/pickProductPhotoEditAlertBtnIv"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignRight="@id/productPhotoEditAlertIv"
+                    android:layout_alignBottom="@id/productPhotoEditAlertIv"
+                    android:src="@drawable/camera_image_white" />
+
+                <TextView
+                    android:id="@+id/categoryEditProductAlertTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productPhotoEditAlertIv"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/bottomMargin"
+                    android:paddingBottom="@dimen/bottomMargin"
+                    android:text="Category"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/newContentSize" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+
+                android:id="@+id/etPNameEdit"
+                style="@style/editTextStyle"
+                android:layout_marginBottom="@dimen/bottomMargin"
+                android:clickable="false"
+                android:drawableLeft="@drawable/order_image"
+                android:focusable="false"
+                android:hint="Product Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName" />
+
+            <EditText
+
+                android:id="@+id/etPriceEdit"
+                style="@style/editTextStyle1"
+                android:layout_below="@id/etPNameADD"
+                android:layout_marginBottom="@dimen/topMargin"
+                android:clickable="false"
+                android:drawableLeft="@drawable/currency_image"
+                android:focusable="false"
+                android:hint="Price in Rupees"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal" />
+
+
+            <EditText
+
+                android:id="@+id/etQuantityEdit"
+                style="@style/editTextStyle"
+                android:layout_marginBottom="@dimen/bottomMargin"
+                android:clickable="false"
+                android:drawableLeft="@drawable/quantity_image"
+                android:focusable="false"
+                android:hint="Quantiy"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/updateAlertBtnEdit"
+                    style="@style/ButtonClick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Update" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
